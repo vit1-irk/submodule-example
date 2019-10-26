@@ -1,3 +1,6 @@
 [submodule "clean-lib-dir"]
 	path = clean-lib-dir
 	url = https://github.com/Sergey-Anfinogentov/clean_lib
+[submodule "topdep"]
+	path = topdep
+	url = https://github.com/vit1-irk/top-dependency-test
