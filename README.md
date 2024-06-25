@@ -19,14 +19,17 @@ git push origin master
 
 ### Updating source code to pull the changes from submodules
 
-Do it every time you want to make the dependencies fresh.
-
-You also need to run these commands after git clone (on a new machine). Otherwise, 
-the submodule directory will be empty
+On a new machine you need to run this command to fetch the data from submodules.
+Otherwise, the submodule directory will be empty
 
 ```
 git submodule update --init --recursive --remote
-git submodule foreach git pull origin master
+```
+
+Run this command every time you want to make the dependencies fresh.
+
+```
+git pull --all --recurse-submodules
 ```
 
 You might also want to commit the changes if upstream dependency repo was updated, so your repo will point up to the latest changes.
